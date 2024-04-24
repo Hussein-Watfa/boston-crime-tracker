@@ -20,6 +20,30 @@
     box-sizing: border-box;
 }
 
+.Legend-content {
+    height: 96%;
+    background-color: rgba(0, 0, 0, 0.651);
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+  }
+
+  .Legend-key li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: white;
+  }
+  
+  .Legend-color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+
 .Legend-dropdown {
     width: 100%;
     padding: 8px;
