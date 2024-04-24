@@ -1,0 +1,14 @@
+.TopBar {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    height: 10%;
+}
+
+text {
+    font-weight: bold;
+    font-size: 46px;
+    font-family: Cambria
+}
