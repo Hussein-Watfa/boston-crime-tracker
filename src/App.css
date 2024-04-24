@@ -12,6 +12,5 @@ html, body{
   height: 100vh;
   margin: 0;
   padding: 0;
-  text-align: center;
-  background-color: grey;
+  background-color: #f5f5dc;
  }
