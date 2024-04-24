@@ -2,19 +2,29 @@
     display: flex;
     width: 100%;
     height: 60%;
-    border: 2px solid orange;
 }
 
 .Map {
     left: 0;
     height: 100%;
-    width: 85%;
-    border: 2px solid green;
+    width: 75%;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 .Legend {
     right: 0;
     height: 100%;
-    width: 15%;
-    border: 2px solid blue;
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
 }
+
+.Legend-dropdown {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+  }
