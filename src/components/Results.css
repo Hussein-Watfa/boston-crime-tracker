@@ -1,11 +1,39 @@
 .Results {
     width: 100%;
-    height: 100%;
+    height: auto;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.Results-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.651);
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .text-Results {
     font-weight: bold;
     font-size: 20px;
-    font-family: Cambria
+    font-family: Cambria;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: white;
 }
+
+.Results ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.Results li {
+    margin-bottom: 10px;
+    color: white;
+}
+  
