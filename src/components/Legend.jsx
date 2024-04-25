@@ -1,17 +1,30 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import './BostonMap.css'
+import { DataContext } from '../context/DataContext';
 
 const cases = [
-    { name: 'Case 1', color: '#FF0000' },
-    { name: 'Case 2', color: '#00FF00' },
-    { name: 'Case 3', color: '#0000FF' },
-    { name: 'Case 4', color: '#FFFF00' },
-    { name: 'Case 5', color: '#A020F0' },
-    { name: 'Case 6', color: '#FFA500' },
-    { name: 'Case 7', color: '#FFC0CB' },
-];
+    { name: 'Case 1', color: '#FFB3B3' },
+    { name: 'Case 2', color: '#FF8080' },
+    { name: 'Case 3', color: '#FF4D4D' },
+    { name: 'Case 4', color: '#FF1A1A' },
+    { name: 'Case 5', color: '#E60000' },
+    { name: 'Case 6', color: '#B30000' },
+    { name: 'Case 7', color: '#800000' },
+  ];
 
 export default function Legend() {
+
+    const { updateData } = useContext(DataContext);
+
+    const handleOptionChange = (event) => {
+        updateData(event.target.value);
+    };
+
+    useEffect(() => {
+        // Load the default data when the component mounts
+        updateData('option1');
+      }, [updateData]);
+
   return (
     <div className = "Legend">
         <div className = "Legend-content">
@@ -27,7 +40,7 @@ export default function Legend() {
                 </li>
                 ))}
             </ul>
-            <select className="Legend-dropdown">
+            <select className="Legend-dropdown" onChange = {handleOptionChange}>
                 <option value="option1">Option 1</option>
                 <option value="option2">Option 2</option>
                 <option value="option3">Option 3</option>
