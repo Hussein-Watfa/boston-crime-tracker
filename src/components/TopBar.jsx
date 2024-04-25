@@ -4,7 +4,7 @@ import './TopBar.css'
 export default function TopBar() {
   return (
     <div className = "TopBar" >
-      <text>Boston Crime Tracker</text>
+      <text className = "text-TopBar">Boston Crime Tracker</text>
     </div>
   )
 }
