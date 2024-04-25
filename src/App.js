@@ -2,14 +2,17 @@ import './App.css';
 import BostonMap from './components/BostonMap';
 import Results from './components/Results';
 import TopBar from './components/TopBar';
+import { DataProvider } from './context/DataContext';
 
 function App() {
   return (
-    <div className="App">
-      <TopBar/>
-      <BostonMap/>
-      <Results/>
-    </div>
+    <DataProvider>
+      <div className="App">
+        <TopBar/>
+        <BostonMap/>
+        <Results/>
+      </div>
+    </DataProvider>
   );
 }
 
